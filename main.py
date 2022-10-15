@@ -71,11 +71,12 @@ def tutorial():
     return render_template('tutorial.html')
 
 
+
 # - - - TO TEST LOCALLY - - -
-if __name__ == "__main__":
-    from waitress import serve
+# if __name__ == "__main__":
+#     from waitress import serve
 #     print("localhost:8080")
-    serve(app)
+#     serve(app, host='0.0.0.0', port=8080)
 
 
 # if __name__ == "__main__":
