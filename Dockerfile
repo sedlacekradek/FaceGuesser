@@ -7,4 +7,4 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-CMD ["waitress-serve", "main:app"]
+CMD ["gunicorn main:app"]
