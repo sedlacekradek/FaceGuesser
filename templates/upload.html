@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{% include "header.html" %}
+
+<body>
+
+{% include "navbar.html" %}
+
+<div class="container-xl mb-4 main-container">
+
+    <label class="upload-label">
+        <i class="bi bi-cloud-upload-fill upload-pic"></i>
+        <form hidden method="POST" enctype="multipart/form-data" id="pic-submit">
+            <input type="file" name="file" accept=".jpg, .jpge, .png"
+                   onchange="javascript:document.getElementById('pic-submit').submit();">
+        </form>
+        <h1>upload picture</h1>
+        <p class="small-text">max size 1MB</p>
+    </label>
+
+</div>
+
+{% include "footer.html" %}
+
+{% include "scripts.html" %}
+
+</body>
+</html>

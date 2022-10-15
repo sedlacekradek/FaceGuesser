@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{% include "header.html" %}
+
+<body>
+
+{% include "navbar.html" %}
+
+<div class="container-xl mb-4 main-container">
+
+    <h1>FaceGuesser</h1>
+    <div class="text-section">
+        is an app that predicts the gender and age of a person. Also, it can detect
+        a smile 🙂
+    </div>
+    <hr>
+
+    <h1>Try it out</h1>
+    <div class="text-section">
+        by uploading a picture. To get the best possible result make sure that the face is well
+        visible and fills as much space in the picture as possible. An example of a well taken photo:<br>
+        <img class="result-image" src="{{ url_for('static', filename='images/example.webp')}}">
+    </div>
+    <hr>
+
+    <h1>Learn more</h1>
+    <div class="text-section">
+        and check out the <strong>how it works</strong> section. Did you know that computers see pictures in a
+        completely different way than people do? And how does machine learning actually work? For that and much
+        more head over there! 😊
+    </div>
+</div>
+
+{% include "footer.html" %}
+
+{% include "scripts.html" %}
+</body>
+</html>
