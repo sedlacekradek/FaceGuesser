@@ -91,9 +91,9 @@ hr {
     box-shadow: 0 8px 12px #393E46;
 }
 
-#tutorial-image-small {
+.tutorial-image-small {
     border-radius: 3%;
-    width: 50%;
+    width: 40%;
     min-width: 200px;
     height: auto;
     margin: 20px;
