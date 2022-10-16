@@ -91,6 +91,15 @@ hr {
     box-shadow: 0 8px 12px #393E46;
 }
 
+#tutorial-image-small {
+    border-radius: 3%;
+    width: 50%;
+    min-width: 200px;
+    height: auto;
+    margin: 20px;
+    box-shadow: 0 8px 12px #393E46;
+}
+
 .again-button {
     margin-top: 2rem;
 }
@@ -120,7 +129,7 @@ hr {
     color: #00ADB5;
 }
 
-/*ANIMATION*/
+/*SHAKE ANIMATION*/
 
 .upload-label:hover {
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;

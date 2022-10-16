@@ -34,7 +34,7 @@
                 <h5>the picture you uploaded?</h5>
                 <i class="bi bi-caret-up-fill icon"></i>
             </summary>
-            <img class="tutorial-image" src="{{ url_for('static', filename='images/example.webp') }}">
+            <img class="tutorial-image-small" src="{{ url_for('static', filename='images/example.webp') }}">
         </details>
 
         <p>
@@ -51,7 +51,7 @@
                 <h5>is this:</h5>
                 <i class="bi bi-caret-up-fill icon"></i>
             </summary>
-            <img class="tutorial-image" src="{{ url_for('static', filename='images/example_gray.webp') }}">
+            <img class="tutorial-image-small" src="{{ url_for('static', filename='images/example_gray.webp') }}">
         </details>
 
         <p>
@@ -141,12 +141,15 @@
         <p>So, should we use this magical CNN to teach our program these patterns now? As Kryten from Red Dwarf would
             put
             it: </p>
-        <blockquote> "A superlative suggestion, sir. With just two minor flaws. One, we don't have any data to use
+
+        <blockquote>
+            "A superlative suggestion, sir. With just two minor flaws. One, we don't have any data to use
             while teaching.
             And two, we don't have any data to use while teaching. Now I realise that technically speaking that's
             only one
             flaw but I thought that it was such a big one that it was worth mentioning twice."
         </blockquote>
+
         <p>
             If our program is to teach itself, it needs data to learn from. A lot of them. It is going to go
             through these data hundreds of thousand of times and learn what patterns to look for. This is called <i>Backpropagation</i>.
@@ -169,7 +172,7 @@
         <p>These pictures have been labeled with the age and gender, which is exactly what we need. It goes without
             saying
             that the quality of this input dataset plays a huge role in how our program will perform. Now all
-            wee need to do is to use CNN to learn from these pictures.
+            we need to do is to use CNN to learn from these pictures.
         </p>
 
         <h1>Chapter 3 - CNN intro</h1>
@@ -238,7 +241,7 @@
                 <h5>basic structures of our picture:</h5>
                 <i class="bi bi-caret-up-fill icon"></i>
             </summary>
-            <img class="tutorial-image" src="{{ url_for('static', filename='images/top-sobel.webp') }}">
+            <img class="tutorial-image" src="{{ url_for('static', filename='images/top_sobel.webp') }}">
         </details>
 
         <p>When FaceGuesser starts learning how to recognize what's in the picture, it will through the cca 25,000
