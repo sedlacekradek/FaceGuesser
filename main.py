@@ -36,8 +36,8 @@ def smile():
             file_ext = os.path.splitext(filename)[1]
             if file_ext not in app.config['UPLOAD_EXTENSIONS']:
                 abort(400)
-            uploaded_file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-        pic_path = f"static/uploads/{filename}"
+            uploaded_file.save(f"{UPLOAD_FOLDER}/{filename}")
+        pic_path = f"{UPLOAD_FOLDER}/{filename}"
         result = smile_eval.eval_smile(pic_path)
         return get_result(pic_result=result, pic_path=pic_path)
     else:
@@ -78,5 +78,5 @@ def tutorial():
 #     serve(app, host='0.0.0.0', port=8080)
 
 
-# if __name__ == "__main__":
-#     app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
