@@ -11,7 +11,6 @@ UPLOAD_FOLDER = 'static/uploads'
 
 # - - - FLASK INITIATION - - -
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 1 * 1024 * 1024  # max upload size 1mb
 app.config['UPLOAD_EXTENSIONS'] = ['.jpg', '.png', '.jpeg']
 
@@ -54,8 +53,8 @@ def face():
             file_ext = os.path.splitext(filename)[1]
             if file_ext not in app.config['UPLOAD_EXTENSIONS']:
                 abort(400)
-            uploaded_file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-        pic_path = f"static/uploads/{filename}"
+            uploaded_file.save(f"{UPLOAD_FOLDER}/{filename}")
+        pic_path = f"{UPLOAD_FOLDER}/{filename}"
         result = face_eval.eval_face(pic_path)
         return get_result(pic_result=result, pic_path=pic_path)
     else:
