@@ -193,7 +193,7 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-/* PROGRESS BARr*/
+/* PROGRESS BAR*/
 
 .progress-container {
   width: 50%;
@@ -219,7 +219,7 @@ summary::-webkit-details-marker {
 
 /*770px*/
 
-@media (max-width: 770px) {
+@media (max-width: 992px) {
 .text-section {
     width: 75%;
 }
